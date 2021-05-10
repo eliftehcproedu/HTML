@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML | TABLO EKLE | CSS Inline</title>
+    <style>
+      /* CSS de yorum satiridir,bu alan CSS kodu icerir
+        CSS selector ler ile istenen HTMLelemanina stilendirme yapılabilir 
+        Bu en kullanisli yontem (style etiketi ) degildir 
+        cunku style etiketi ile yapilan stillendirmeler sadece bu dosya icin gecerli olur. 
+        Eger tum proje icin global bir stillendirme istersek o zaman harici bir .CSS dosyası olusturmak 
+        ve bu dosyayi HTML'e import etmek gerekir*
+        
+        */
+
+      * {
+        text-align: center;
+      }
+      h1 {
+        color: green;
+        font-size: 25px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      p {
+        color: blue;
+      }
+      #p1 {
+        color: purple;
+      }
+      .p2 {
+        color: brown;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 30px;
+        text-align: left;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>TABLO EKLEME</h1>
+    <h1>CSS stillendirme</h1>
+    <!-- id bir CSS selectordur ve tek element stillendirilecekse kullanmak daha mantiklidir id ye erisim stillendirmede # kullanilir
+     ID ile CSS selector’unu eklersek id verilen paragraf ozellestirilip ,
+      sadece onun icin gecerli olan stillendirme islemleri yapilabilir.ID unique olmasi gerekir . -->
+    <p id="p1">Bu bir paragraftir</p>
+    <!--class selectoru ise grup stillendirmesi icin kullanilr,  erisim icin nokts(.) kullanilir-->
+    <!--HTML , CSS de isimlendirme yapılırken  kebap case  kullanılır-->
+    <p id="p1-yazi">Bu bir paragraftir</p>
+    <p class="p2">Bu da baska bir paragraftir</p>
+    <p class="p2">CSS HTML e gore daha fazla detay icermektedir</p>
+  </body>
+</html>

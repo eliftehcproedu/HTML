@@ -1,0 +1,35 @@
+* {
+  text-align: center;
+}
+
+h1 {
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 30px;
+}
+/*solid : duz cizgili    double: cift cizgili     dashed :kesik cizgili  */
+/*cizgi kalinligi   cizgi turu   renk*/
+.tablo {
+  border: 4px solid gray;
+  border-collapse: collapse;
+  width: 50%; /* width :60%;500px;  genislik yuzde olarak da verilebilir. Yuzdelik dilim sayfaya gore hesaplanir*/
+  margin-left: auto; /*sol ve sagdan otomatik bosluk koyarak nesneler ortaya hazirlanabilir*/
+  margin-right: auto;
+}
+/*Birden fazla atribute e ayni stillendirme yapilacaksa virgul ile ayrilarak yazilabilir  */
+th,
+td {
+  border: 4px solid grey;
+}
+th {
+  background-color: yellowgreen; /*sadece tablo basligina arkaplan rengi vermek icin sadece  th a islem yaptik..*/
+}
+tr:hover {
+  /*uzerine gelinen satira arkaplan rengi koyar */
+  background-color: rgb(230, 207, 207);
+}
+
+tr:nth-child(even) {
+  /*uzerine gelinen tr elemaninin satir no su even (cift) olanlarin arkaplan rengi.., css teki fonksyonel islemler gibi*/
+  background-color: rgb(235, 235, 235);
+}

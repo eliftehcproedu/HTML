@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!--formun nereye kayit olacagini gosteren yer
+     <! required="" --doldurulmasi zorunlu alan  -->
+    <title>Formlar</title>
+  </head>
+  <body>
+    <h1>FORMLAR</h1>
+    <form action="kaydet.php">
+      <label for="ad">Adınız: </label>
+      <input
+        class="input"
+        id="ad"
+        type="text"
+        maxlength="20"
+        placeholder="isim giriniz"
+      />
+      <br />
+
+      <label for="şifre">Sifreniz:</label>
+      <input
+        class="input"
+        id="sifre"
+        type="password"
+        name="ad"
+        value=""
+        required=""
+      />
+      <br />
+
+      <label for="şifre">Email:</label>
+      <input class="input" id="email" type="email" name="email" value="" />
+      <br />
+
+      <label for="sayı">Yaşınız:</label>
+      <input
+        class="input"
+        id="sayı"
+        type="number"
+        name="yas"
+        min="0"
+        max="100"
+      />
+      <br />
+
+      <input type="submit" value="Gönder" />
+      <input type="button" value="Temizle" />
+    </form>
+  </body>
+</html>
