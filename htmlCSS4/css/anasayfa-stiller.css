@@ -1,0 +1,67 @@
+*{
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body {  /*top, right,bottom, left  : ustten basla saat yonunde gider*/
+ margin:200px 30px 200px 10px;
+ text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: bolder;
+ font-size: 20px;
+ color: black;
+}
+
+.header{
+
+ color: white;
+ background-color: red;
+ height: 50px;
+ padding: 50px;
+ margin-bottom: 10px;
+}
+
+.nav{
+padding: 10px;
+background-color: rgb(102, 102, 235);
+}
+.aside{
+ background: yellow;
+ float: left;
+ width: 25%;
+height: 60%;
+ 
+}
+.main{
+ float: left;
+ background:antiquewhite;
+ width: 75%;
+ height: 60%;
+ 
+}
+.footer{
+ padding: 30px;
+ background: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+margin: 25px 50px 75px 100px;
+top margin is 25px
+right margin is 50px
+bottom margin is 75px
+left margin is 100px
+*/
+
+/*margin :50px  100px;
+top-bottom margin is 50px
+right-left margin is  100px 

@@ -1,8 +1,93 @@
+/*ComicNeue Google Font*/
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,300&family=Nunito+Sans:ital,wght@1,300&display=swap");
+
 * {
   text-align: center;
+  margin: 0; /*bastan tum marginleri(bosluklari) sifirlar **/
+  box-sizing: border-box;
+  /*box-sizing : CSS de kullanilan kutu modelini secmek icin kullaniilir. Genelde border-box modeli tercih edilir*/
 }
-.input {
-  margin-bottom: 20px;
+
+h1 {
+  margin-top: 50px;
+}
+
+body {
+  background-image: linear-gradient(pink, orange); /*iki renkli arkaplan */
+  font-family: "Comic Neue", sans-serif;
+}
+
+.giris {
+  margin-bottom: 20px; /*alttan mesafe**/
+  width: 200px; /*genislik-en*/
+  height: 30px; /*yukseklik-boy**/
+}
+
+.label {
+  /*display: none; label etiketi tasiyan hersey gorunmez oldu*/
+  display: block; /*inline olan bir element blok haline getirilir*/
+  margin-right: 30px;
+
+  /** padding  : icerik ile , border arasinda ki bosluk oluyor, ic alan , ice dogru bosluk*/
+}
+
+.btn {
+  font-size: 16px;
+  color: white;
+  width: 100px;
+  height: 30px;
+  margin-top: 10px; /*ustten mesafe*/
+  border: 4px solid rgb(189, 4, 4);
+  border-radius: 20px; /*buttonlarin koseleri yuvarlama*/
+  background: tomato;
+  cursor: pointer; /*uzerine geldiginde mouse oku el isaretine donusuyor*/
+}
+
+.btn:hover {
+  /*uzerine geidigi yerin backround ini degistirir*/
+  background: grey;
+}
+
+.far,
+.fas {
+  font-size: 15px;
+}
+
+i {
+  color: black;
+}
+
+textarea {
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
   width: 200px;
-  height: 25px;
+  border-radius: 10px;
 }
+
+
+
+/*assets dosyası içinde lib klasörü açarak istediğimiz linkleri içine atarak istenildiginde import edilerek ulaşılabilir Artisi net olmadan local de calisma imkani saglar
+bunun yerine kisayol : link alma (import)
+ <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+     /*
+.far,
+.fas {
+  bu islem ikonlarin rengini belirler
+  color: black;
+  font-size: 15px;
+}
+/*
+i {  yukardaki islem ile aynidir
+ color: black; 
+} 
+
+i .far { yukardaki islem ile aynidir
+   color: black; 
+}
+*/
+
